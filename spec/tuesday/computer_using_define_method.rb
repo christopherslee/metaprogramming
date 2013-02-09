@@ -15,6 +15,10 @@ class Computer
     end
   end
 
+  def respond_to?(method)
+    @data_source.respond_to?(method) || super
+  end
+
   define_component :mouse
   define_component :cpu
 end

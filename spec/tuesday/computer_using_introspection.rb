@@ -16,5 +16,8 @@ class Computer
       result
     end
   end
-end
 
+  def respond_to?(method)
+    @data_source.respond_to?("get_#{method}_info") || super
+  end
+end

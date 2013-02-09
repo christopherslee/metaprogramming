@@ -1,6 +1,6 @@
-require './spec/tuesday/computer'
+require './spec/tuesday/computer_using_introspection'
 
-describe Computer do
+describe "Computer using introspection" do
 
   it "should return the price for a mouse" do
     data_source = double(:get_mouse_info => "standard mouse",

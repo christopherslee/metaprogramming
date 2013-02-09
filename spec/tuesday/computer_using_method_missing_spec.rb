@@ -1,6 +1,6 @@
-require './spec/tuesday/computer'
+require './spec/tuesday/computer_using_method_missing'
 
-describe Computer do
+describe "Computer using method missing" do
 
   it "should return the price for a mouse" do
     data_source = double(:get_mouse_info => "standard mouse",
